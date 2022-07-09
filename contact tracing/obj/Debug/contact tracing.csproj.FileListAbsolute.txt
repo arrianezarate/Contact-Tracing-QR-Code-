@@ -20,3 +20,7 @@ C:\Users\arriane\source\repos\contact tracing\contact tracing\obj\Debug\contact 
 C:\Users\arriane\source\repos\contact tracing\contact tracing\obj\Debug\contact tracing.csproj.CopyComplete
 C:\Users\arriane\source\repos\contact tracing\contact tracing\obj\Debug\contact tracing.exe
 C:\Users\arriane\source\repos\contact tracing\contact tracing\obj\Debug\contact tracing.pdb
+C:\Users\arriane\source\repos\contact tracing\contact tracing\obj\Debug\contact_tracing.admin_login_page.resources
+C:\Users\arriane\source\repos\contact tracing\contact tracing\obj\Debug\contact_tracing.admin.resources
+C:\Users\arriane\source\repos\contact tracing\contact tracing\obj\Debug\contact_tracing.all_records.resources
+C:\Users\arriane\source\repos\contact tracing\contact tracing\obj\Debug\contact_tracing.by_date.resources

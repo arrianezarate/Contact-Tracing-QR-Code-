@@ -70,5 +70,11 @@ namespace contact_tracing
         {
 
         }
+
+        private void btn_admin_Click(object sender, EventArgs e)
+        {
+            admin_login_page show = new admin_login_page();
+            show.ShowDialog();
+        }
     }
 }

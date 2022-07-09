@@ -1,6 +1,6 @@
 ﻿namespace contact_tracing
 {
-    partial class admin_page
+    partial class admin
     {
         /// <summary>
         /// Required designer variable.
@@ -32,11 +32,11 @@
             this.btn_select = new System.Windows.Forms.Button();
             this.pnl_all = new System.Windows.Forms.Panel();
             this.date = new System.Windows.Forms.DateTimePicker();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.pnl_date = new System.Windows.Forms.Panel();
             this.lbl_allrecords = new System.Windows.Forms.Label();
             this.lbl_calendar = new System.Windows.Forms.Label();
             this.pnl_all.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.pnl_date.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn_view
@@ -82,15 +82,15 @@
             this.date.TabIndex = 3;
             this.date.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
-            // panel1
+            // pnl_date
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(93)))), ((int)(((byte)(160)))));
-            this.panel1.Controls.Add(this.lbl_calendar);
-            this.panel1.Controls.Add(this.date);
-            this.panel1.Location = new System.Drawing.Point(58, 258);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(261, 100);
-            this.panel1.TabIndex = 3;
+            this.pnl_date.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(93)))), ((int)(((byte)(160)))));
+            this.pnl_date.Controls.Add(this.lbl_calendar);
+            this.pnl_date.Controls.Add(this.date);
+            this.pnl_date.Location = new System.Drawing.Point(58, 258);
+            this.pnl_date.Name = "pnl_date";
+            this.pnl_date.Size = new System.Drawing.Size(261, 100);
+            this.pnl_date.TabIndex = 3;
             // 
             // lbl_allrecords
             // 
@@ -114,23 +114,23 @@
             this.lbl_calendar.TabIndex = 2;
             this.lbl_calendar.Text = "CALENDAR";
             // 
-            // admin_page
+            // admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(377, 450);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pnl_date);
             this.Controls.Add(this.pnl_all);
             this.Controls.Add(this.btn_select);
             this.Controls.Add(this.btn_view);
-            this.Name = "admin_page";
+            this.Name = "admin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ADMIN ";
             this.pnl_all.ResumeLayout(false);
             this.pnl_all.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.pnl_date.ResumeLayout(false);
+            this.pnl_date.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -141,7 +141,7 @@
         private System.Windows.Forms.Button btn_select;
         private System.Windows.Forms.Panel pnl_all;
         private System.Windows.Forms.DateTimePicker date;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel pnl_date;
         private System.Windows.Forms.Label lbl_allrecords;
         private System.Windows.Forms.Label lbl_calendar;
     }

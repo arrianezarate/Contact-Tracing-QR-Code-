@@ -56,7 +56,10 @@
             this.lbl_lastname = new System.Windows.Forms.Label();
             this.lbl_middlename = new System.Windows.Forms.Label();
             this.lbl_address = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lbl_birthdate = new System.Windows.Forms.Label();
+            this.lbl_gender = new System.Windows.Forms.Label();
+            this.lbl_camera = new System.Windows.Forms.Label();
+            this.lbl_display = new System.Windows.Forms.Label();
             this.pnl_bot.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picbox_cameradisplay)).BeginInit();
             this.SuspendLayout();
@@ -94,6 +97,7 @@
             this.btn_admin.TabIndex = 1;
             this.btn_admin.Text = "ADMIN";
             this.btn_admin.UseVisualStyleBackColor = false;
+            this.btn_admin.Click += new System.EventHandler(this.btn_admin_Click);
             // 
             // txtbox_firstname
             // 
@@ -313,16 +317,49 @@
             this.lbl_address.TabIndex = 22;
             this.lbl_address.Text = "Address";
             // 
-            // label2
+            // lbl_birthdate
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(212)))), ((int)(((byte)(224)))));
-            this.label2.Location = new System.Drawing.Point(246, 101);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 21);
-            this.label2.TabIndex = 23;
-            this.label2.Text = "Address";
+            this.lbl_birthdate.AutoSize = true;
+            this.lbl_birthdate.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_birthdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(212)))), ((int)(((byte)(224)))));
+            this.lbl_birthdate.Location = new System.Drawing.Point(215, 101);
+            this.lbl_birthdate.Name = "lbl_birthdate";
+            this.lbl_birthdate.Size = new System.Drawing.Size(97, 21);
+            this.lbl_birthdate.TabIndex = 23;
+            this.lbl_birthdate.Text = "Date of Birth";
+            // 
+            // lbl_gender
+            // 
+            this.lbl_gender.AutoSize = true;
+            this.lbl_gender.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_gender.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(212)))), ((int)(((byte)(224)))));
+            this.lbl_gender.Location = new System.Drawing.Point(483, 101);
+            this.lbl_gender.Name = "lbl_gender";
+            this.lbl_gender.Size = new System.Drawing.Size(61, 21);
+            this.lbl_gender.TabIndex = 24;
+            this.lbl_gender.Text = "Gender";
+            // 
+            // lbl_camera
+            // 
+            this.lbl_camera.AutoSize = true;
+            this.lbl_camera.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_camera.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(212)))), ((int)(((byte)(224)))));
+            this.lbl_camera.Location = new System.Drawing.Point(177, 322);
+            this.lbl_camera.Name = "lbl_camera";
+            this.lbl_camera.Size = new System.Drawing.Size(64, 21);
+            this.lbl_camera.TabIndex = 25;
+            this.lbl_camera.Text = "Camera";
+            // 
+            // lbl_display
+            // 
+            this.lbl_display.AutoSize = true;
+            this.lbl_display.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_display.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(212)))), ((int)(((byte)(224)))));
+            this.lbl_display.Location = new System.Drawing.Point(522, 349);
+            this.lbl_display.Name = "lbl_display";
+            this.lbl_display.Size = new System.Drawing.Size(61, 21);
+            this.lbl_display.TabIndex = 26;
+            this.lbl_display.Text = "Display";
             // 
             // form_contacttracing
             // 
@@ -332,7 +369,10 @@
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(93)))), ((int)(((byte)(160)))));
             this.ClientSize = new System.Drawing.Size(783, 734);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lbl_display);
+            this.Controls.Add(this.lbl_camera);
+            this.Controls.Add(this.lbl_gender);
+            this.Controls.Add(this.lbl_birthdate);
             this.Controls.Add(this.lbl_address);
             this.Controls.Add(this.lbl_middlename);
             this.Controls.Add(this.lbl_lastname);
@@ -399,7 +439,10 @@
         private System.Windows.Forms.Label lbl_lastname;
         private System.Windows.Forms.Label lbl_middlename;
         private System.Windows.Forms.Label lbl_address;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbl_birthdate;
+        private System.Windows.Forms.Label lbl_gender;
+        private System.Windows.Forms.Label lbl_camera;
+        private System.Windows.Forms.Label lbl_display;
     }
 }
 

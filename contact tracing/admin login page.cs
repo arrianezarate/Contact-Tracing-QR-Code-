@@ -16,5 +16,33 @@ namespace contact_tracing
         {
             InitializeComponent();
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_login_Click(object sender, EventArgs e)
+        {
+            if (txtbox_username.Text == "arriane" && txtbox_password.Text == "123")
+            {
+                new admin().Show();
+                this.Hide();
+
+            }
+
+            else
+            {
+                MessageBox.Show("Wrong username or password.");
+                txtbox_username.Clear();
+                txtbox_password.Clear();
+                lbl_username.Focus();
+
+
+            }
+
+            MessageBox.Show("Welcome!");
+            MessageBox.Show("You are now logged in.");
+        }
     }
 }

@@ -61,6 +61,30 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="admin login page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin login page.Designer.cs">
+      <DependentUpon>admin login page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin page.Designer.cs">
+      <DependentUpon>admin page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="all records.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="all records.Designer.cs">
+      <DependentUpon>all records.cs</DependentUpon>
+    </Compile>
+    <Compile Include="by date.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="by date.Designer.cs">
+      <DependentUpon>by date.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +93,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="admin login page.resx">
+      <DependentUpon>admin login page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin page.resx">
+      <DependentUpon>admin page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="all records.resx">
+      <DependentUpon>all records.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="by date.resx">
+      <DependentUpon>by date.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
