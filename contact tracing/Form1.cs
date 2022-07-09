@@ -102,5 +102,22 @@ namespace contact_tracing
         {
 
         }
+
+        private void btn_filltxtbox_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Autofill processing...", "Contact Tracing", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            string myString = txtbox_displaytxt.Text;
+            string[] str = myString.Split(' ');
+            txtbox_firstname.Text = str[0].Substring(str[0].IndexOf('-') + 1);
+            txtbox_middlename.Text = str[1].Substring(str[1].IndexOf('-') + 1);
+            txtbox_lastname.Text = str[2].Substring(str[2].IndexOf('-') + 1);
+            txtbox_birthdate.Text = str[3].Substring(str[3].IndexOf('-') + 1);
+            txtbox_age.Text = str[4].Substring(str[4].IndexOf('-') + 1);
+            txtbox_gender.Text = str[5].Substring(str[5].IndexOf('-') + 1);
+            txtbox_address.Text = str[6].Substring(str[6].IndexOf('-') + 1);
+            txtbox_mobile.Text = str[7].Substring(str[7].IndexOf('-') + 1);
+            txtbox_email.Text = str[8].Substring(str[8].IndexOf('-') + 1);
+        }
     }
 }

@@ -222,6 +222,7 @@
             this.btn_filltxtbox.TabIndex = 14;
             this.btn_filltxtbox.Text = "FILL";
             this.btn_filltxtbox.UseVisualStyleBackColor = false;
+            this.btn_filltxtbox.Click += new System.EventHandler(this.btn_filltxtbox_Click);
             // 
             // btn_startcam
             // 
