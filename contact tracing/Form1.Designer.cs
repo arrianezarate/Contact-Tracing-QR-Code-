@@ -49,6 +49,14 @@
             this.btn_filltxtbox = new System.Windows.Forms.Button();
             this.btn_startcam = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.lbl_mobile = new System.Windows.Forms.Label();
+            this.lbl_email = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lbl_firstname = new System.Windows.Forms.Label();
+            this.lbl_lastname = new System.Windows.Forms.Label();
+            this.lbl_middlename = new System.Windows.Forms.Label();
+            this.lbl_address = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.pnl_bot.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picbox_cameradisplay)).BeginInit();
             this.SuspendLayout();
@@ -173,9 +181,9 @@
             // date
             // 
             this.date.Font = new System.Drawing.Font("Mongolian Baiti", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.date.Location = new System.Drawing.Point(372, 22);
+            this.date.Location = new System.Drawing.Point(393, 22);
             this.date.Name = "date";
-            this.date.Size = new System.Drawing.Size(278, 25);
+            this.date.Size = new System.Drawing.Size(257, 25);
             this.date.TabIndex = 11;
             // 
             // picbox_cameradisplay
@@ -227,6 +235,95 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // lbl_mobile
+            // 
+            this.lbl_mobile.AutoSize = true;
+            this.lbl_mobile.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_mobile.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(212)))), ((int)(((byte)(224)))));
+            this.lbl_mobile.Location = new System.Drawing.Point(8, 198);
+            this.lbl_mobile.Name = "lbl_mobile";
+            this.lbl_mobile.Size = new System.Drawing.Size(86, 21);
+            this.lbl_mobile.TabIndex = 16;
+            this.lbl_mobile.Text = "Mobile No.";
+            // 
+            // lbl_email
+            // 
+            this.lbl_email.AutoSize = true;
+            this.lbl_email.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_email.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(212)))), ((int)(((byte)(224)))));
+            this.lbl_email.Location = new System.Drawing.Point(46, 240);
+            this.lbl_email.Name = "lbl_email";
+            this.lbl_email.Size = new System.Drawing.Size(48, 21);
+            this.lbl_email.TabIndex = 17;
+            this.lbl_email.Text = "Email";
+            this.lbl_email.Click += new System.EventHandler(this.lbl_email_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(212)))), ((int)(((byte)(224)))));
+            this.label1.Location = new System.Drawing.Point(28, 150);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(66, 21);
+            this.label1.TabIndex = 18;
+            this.label1.Text = "Address";
+            // 
+            // lbl_firstname
+            // 
+            this.lbl_firstname.AutoSize = true;
+            this.lbl_firstname.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_firstname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(212)))), ((int)(((byte)(224)))));
+            this.lbl_firstname.Location = new System.Drawing.Point(8, 63);
+            this.lbl_firstname.Name = "lbl_firstname";
+            this.lbl_firstname.Size = new System.Drawing.Size(86, 21);
+            this.lbl_firstname.TabIndex = 19;
+            this.lbl_firstname.Text = "First Name";
+            // 
+            // lbl_lastname
+            // 
+            this.lbl_lastname.AutoSize = true;
+            this.lbl_lastname.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_lastname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(212)))), ((int)(((byte)(224)))));
+            this.lbl_lastname.Location = new System.Drawing.Point(460, 61);
+            this.lbl_lastname.Name = "lbl_lastname";
+            this.lbl_lastname.Size = new System.Drawing.Size(84, 21);
+            this.lbl_lastname.TabIndex = 20;
+            this.lbl_lastname.Text = "Last Name";
+            // 
+            // lbl_middlename
+            // 
+            this.lbl_middlename.AutoSize = true;
+            this.lbl_middlename.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_middlename.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(212)))), ((int)(((byte)(224)))));
+            this.lbl_middlename.Location = new System.Drawing.Point(208, 61);
+            this.lbl_middlename.Name = "lbl_middlename";
+            this.lbl_middlename.Size = new System.Drawing.Size(104, 21);
+            this.lbl_middlename.TabIndex = 21;
+            this.lbl_middlename.Text = "Middle Name";
+            // 
+            // lbl_address
+            // 
+            this.lbl_address.AutoSize = true;
+            this.lbl_address.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_address.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(212)))), ((int)(((byte)(224)))));
+            this.lbl_address.Location = new System.Drawing.Point(28, 101);
+            this.lbl_address.Name = "lbl_address";
+            this.lbl_address.Size = new System.Drawing.Size(66, 21);
+            this.lbl_address.TabIndex = 22;
+            this.lbl_address.Text = "Address";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(212)))), ((int)(((byte)(224)))));
+            this.label2.Location = new System.Drawing.Point(246, 101);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(66, 21);
+            this.label2.TabIndex = 23;
+            this.label2.Text = "Address";
+            // 
             // form_contacttracing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -235,6 +332,14 @@
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(93)))), ((int)(((byte)(160)))));
             this.ClientSize = new System.Drawing.Size(783, 734);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lbl_address);
+            this.Controls.Add(this.lbl_middlename);
+            this.Controls.Add(this.lbl_lastname);
+            this.Controls.Add(this.lbl_firstname);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lbl_email);
+            this.Controls.Add(this.lbl_mobile);
             this.Controls.Add(this.btn_startcam);
             this.Controls.Add(this.btn_filltxtbox);
             this.Controls.Add(this.txtbox_displaytxt);
@@ -287,6 +392,14 @@
         private System.Windows.Forms.Button btn_filltxtbox;
         private System.Windows.Forms.Button btn_startcam;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label lbl_mobile;
+        private System.Windows.Forms.Label lbl_email;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbl_firstname;
+        private System.Windows.Forms.Label lbl_lastname;
+        private System.Windows.Forms.Label lbl_middlename;
+        private System.Windows.Forms.Label lbl_address;
+        private System.Windows.Forms.Label label2;
     }
 }
 

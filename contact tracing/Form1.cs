@@ -65,5 +65,10 @@ namespace contact_tracing
                 }
             }
         }
+
+        private void lbl_email_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

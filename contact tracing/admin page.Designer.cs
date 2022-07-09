@@ -31,8 +31,11 @@
             this.btn_view = new System.Windows.Forms.Button();
             this.btn_select = new System.Windows.Forms.Button();
             this.pnl_all = new System.Windows.Forms.Panel();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.date = new System.Windows.Forms.DateTimePicker();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lbl_allrecords = new System.Windows.Forms.Label();
+            this.lbl_calendar = new System.Windows.Forms.Label();
+            this.pnl_all.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,27 +66,53 @@
             // pnl_all
             // 
             this.pnl_all.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(93)))), ((int)(((byte)(160)))));
+            this.pnl_all.Controls.Add(this.lbl_allrecords);
             this.pnl_all.Location = new System.Drawing.Point(87, 43);
             this.pnl_all.Name = "pnl_all";
             this.pnl_all.Size = new System.Drawing.Size(205, 100);
             this.pnl_all.TabIndex = 2;
             // 
-            // dateTimePicker1
+            // date
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(34, 38);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 3;
-            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            this.date.CalendarFont = new System.Drawing.Font("Limousine", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.date.Font = new System.Drawing.Font("Mongolian Baiti", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.date.Location = new System.Drawing.Point(13, 47);
+            this.date.Name = "date";
+            this.date.Size = new System.Drawing.Size(236, 25);
+            this.date.TabIndex = 3;
+            this.date.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(93)))), ((int)(((byte)(160)))));
-            this.panel1.Controls.Add(this.dateTimePicker1);
+            this.panel1.Controls.Add(this.lbl_calendar);
+            this.panel1.Controls.Add(this.date);
             this.panel1.Location = new System.Drawing.Point(58, 258);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(261, 100);
             this.panel1.TabIndex = 3;
+            // 
+            // lbl_allrecords
+            // 
+            this.lbl_allrecords.AutoSize = true;
+            this.lbl_allrecords.Font = new System.Drawing.Font("Impact", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_allrecords.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(212)))), ((int)(((byte)(224)))));
+            this.lbl_allrecords.Location = new System.Drawing.Point(54, 22);
+            this.lbl_allrecords.Name = "lbl_allrecords";
+            this.lbl_allrecords.Size = new System.Drawing.Size(100, 58);
+            this.lbl_allrecords.TabIndex = 1;
+            this.lbl_allrecords.Text = "       ALL \r\nRECORDS";
+            // 
+            // lbl_calendar
+            // 
+            this.lbl_calendar.AutoSize = true;
+            this.lbl_calendar.Font = new System.Drawing.Font("Impact", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_calendar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(212)))), ((int)(((byte)(224)))));
+            this.lbl_calendar.Location = new System.Drawing.Point(77, 15);
+            this.lbl_calendar.Name = "lbl_calendar";
+            this.lbl_calendar.Size = new System.Drawing.Size(108, 29);
+            this.lbl_calendar.TabIndex = 2;
+            this.lbl_calendar.Text = "CALENDAR";
             // 
             // admin_page
             // 
@@ -98,7 +127,10 @@
             this.Name = "admin_page";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ADMIN ";
+            this.pnl_all.ResumeLayout(false);
+            this.pnl_all.PerformLayout();
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -108,7 +140,9 @@
         private System.Windows.Forms.Button btn_view;
         private System.Windows.Forms.Button btn_select;
         private System.Windows.Forms.Panel pnl_all;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker date;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label lbl_allrecords;
+        private System.Windows.Forms.Label lbl_calendar;
     }
 }
