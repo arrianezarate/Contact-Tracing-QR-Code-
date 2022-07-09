@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -75,6 +76,31 @@ namespace contact_tracing
         {
             admin_login_page show = new admin_login_page();
             show.ShowDialog();
+        }
+
+        private void btn_finish_Click(object sender, EventArgs e)
+        {
+            StreamWriter file = new StreamWriter(@"C:\Users\arriane\source\repos\contact tracing\lists\" + txtbox_lastname.Text + ", " + txtbox_firstname.Text + ", " + txtbox_middlename.Text + ".txt", true);
+            file.WriteLine("First Name - " + txtbox_firstname.Text);
+            file.WriteLine("Middle Name - " + txtbox_middlename.Text);
+            file.WriteLine("Last Name - " + txtbox_lastname.Text);
+            file.WriteLine("Age - " + txtbox_age.Text);
+            file.WriteLine("Date of Birth - " + txtbox_birthdate.Text);
+            file.WriteLine("Mobile No. - " + txtbox_mobile.Text);
+            file.WriteLine("Email - " + txtbox_email.Text);
+            file.WriteLine("Gender - " + txtbox_gender.Text);
+            file.WriteLine("Address - " + txtbox_address.Text);
+            file.WriteLine("Date - " + date.Text);
+            file.Close();
+
+            MessageBox.Show("Thanks for cooperating.", "Contact Tracing", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Have a good day!", "Contact Tracing", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+        }
+
+        private void date_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

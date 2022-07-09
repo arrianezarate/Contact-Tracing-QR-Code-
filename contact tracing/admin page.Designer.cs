@@ -50,6 +50,7 @@
             this.btn_view.TabIndex = 0;
             this.btn_view.Text = "VIEW";
             this.btn_view.UseVisualStyleBackColor = false;
+            this.btn_view.Click += new System.EventHandler(this.btn_view_Click);
             // 
             // btn_select
             // 
@@ -62,6 +63,7 @@
             this.btn_select.TabIndex = 1;
             this.btn_select.Text = "SELECT";
             this.btn_select.UseVisualStyleBackColor = false;
+            this.btn_select.Click += new System.EventHandler(this.btn_select_Click);
             // 
             // pnl_all
             // 

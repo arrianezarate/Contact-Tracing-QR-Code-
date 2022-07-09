@@ -173,6 +173,7 @@
             this.btn_finish.TabIndex = 2;
             this.btn_finish.Text = "FINISH";
             this.btn_finish.UseVisualStyleBackColor = false;
+            this.btn_finish.Click += new System.EventHandler(this.btn_finish_Click);
             // 
             // combobox_camera
             // 
@@ -189,6 +190,7 @@
             this.date.Name = "date";
             this.date.Size = new System.Drawing.Size(257, 25);
             this.date.TabIndex = 11;
+            this.date.ValueChanged += new System.EventHandler(this.date_ValueChanged);
             // 
             // picbox_cameradisplay
             // 
