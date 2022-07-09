@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.pnl_bot = new System.Windows.Forms.Panel();
             this.lbl_contact = new System.Windows.Forms.Label();
             this.btn_admin = new System.Windows.Forms.Button();
@@ -46,6 +47,8 @@
             this.picbox_cameradisplay = new System.Windows.Forms.PictureBox();
             this.txtbox_displaytxt = new System.Windows.Forms.TextBox();
             this.btn_filltxtbox = new System.Windows.Forms.Button();
+            this.btn_startcam = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.pnl_bot.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picbox_cameradisplay)).BeginInit();
             this.SuspendLayout();
@@ -206,6 +209,24 @@
             this.btn_filltxtbox.Text = "FILL";
             this.btn_filltxtbox.UseVisualStyleBackColor = false;
             // 
+            // btn_startcam
+            // 
+            this.btn_startcam.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(192)))));
+            this.btn_startcam.Font = new System.Drawing.Font("Impact", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_startcam.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(212)))), ((int)(((byte)(224)))));
+            this.btn_startcam.Location = new System.Drawing.Point(100, 576);
+            this.btn_startcam.Name = "btn_startcam";
+            this.btn_startcam.Size = new System.Drawing.Size(220, 43);
+            this.btn_startcam.TabIndex = 15;
+            this.btn_startcam.Text = "START CAMERA";
+            this.btn_startcam.UseVisualStyleBackColor = false;
+            this.btn_startcam.Click += new System.EventHandler(this.btn_startcam_Click);
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // form_contacttracing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -214,6 +235,7 @@
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(93)))), ((int)(((byte)(160)))));
             this.ClientSize = new System.Drawing.Size(783, 734);
+            this.Controls.Add(this.btn_startcam);
             this.Controls.Add(this.btn_filltxtbox);
             this.Controls.Add(this.txtbox_displaytxt);
             this.Controls.Add(this.picbox_cameradisplay);
@@ -233,6 +255,8 @@
             this.Name = "form_contacttracing";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Contact Tracing";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.form_contacttracing_FormClosing);
+            this.Load += new System.EventHandler(this.form_contacttracing_Load);
             this.pnl_bot.ResumeLayout(false);
             this.pnl_bot.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picbox_cameradisplay)).EndInit();
@@ -261,6 +285,8 @@
         private System.Windows.Forms.PictureBox picbox_cameradisplay;
         private System.Windows.Forms.TextBox txtbox_displaytxt;
         private System.Windows.Forms.Button btn_filltxtbox;
+        private System.Windows.Forms.Button btn_startcam;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 

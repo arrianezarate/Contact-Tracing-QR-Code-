@@ -1,0 +1,22 @@
+C:\Users\arriane\source\repos\contact tracing\contact tracing\bin\Debug\contact tracing.exe.config
+C:\Users\arriane\source\repos\contact tracing\contact tracing\bin\Debug\contact tracing.exe
+C:\Users\arriane\source\repos\contact tracing\contact tracing\bin\Debug\contact tracing.pdb
+C:\Users\arriane\source\repos\contact tracing\contact tracing\bin\Debug\AForge.dll
+C:\Users\arriane\source\repos\contact tracing\contact tracing\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\arriane\source\repos\contact tracing\contact tracing\bin\Debug\AForge.Video.dll
+C:\Users\arriane\source\repos\contact tracing\contact tracing\bin\Debug\zxing.dll
+C:\Users\arriane\source\repos\contact tracing\contact tracing\bin\Debug\zxing.presentation.dll
+C:\Users\arriane\source\repos\contact tracing\contact tracing\bin\Debug\AForge.xml
+C:\Users\arriane\source\repos\contact tracing\contact tracing\bin\Debug\AForge.Video.xml
+C:\Users\arriane\source\repos\contact tracing\contact tracing\bin\Debug\AForge.Video.DirectShow.xml
+C:\Users\arriane\source\repos\contact tracing\contact tracing\bin\Debug\zxing.xml
+C:\Users\arriane\source\repos\contact tracing\contact tracing\bin\Debug\zxing.presentation.xml
+C:\Users\arriane\source\repos\contact tracing\contact tracing\obj\Debug\contact tracing.csproj.AssemblyReference.cache
+C:\Users\arriane\source\repos\contact tracing\contact tracing\obj\Debug\contact tracing.csproj.SuggestedBindingRedirects.cache
+C:\Users\arriane\source\repos\contact tracing\contact tracing\obj\Debug\contact_tracing.form_contacttracing.resources
+C:\Users\arriane\source\repos\contact tracing\contact tracing\obj\Debug\contact_tracing.Properties.Resources.resources
+C:\Users\arriane\source\repos\contact tracing\contact tracing\obj\Debug\contact tracing.csproj.GenerateResource.cache
+C:\Users\arriane\source\repos\contact tracing\contact tracing\obj\Debug\contact tracing.csproj.CoreCompileInputs.cache
+C:\Users\arriane\source\repos\contact tracing\contact tracing\obj\Debug\contact tracing.csproj.CopyComplete
+C:\Users\arriane\source\repos\contact tracing\contact tracing\obj\Debug\contact tracing.exe
+C:\Users\arriane\source\repos\contact tracing\contact tracing\obj\Debug\contact tracing.pdb
