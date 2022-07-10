@@ -108,7 +108,7 @@ namespace contact_tracing
             MessageBox.Show("Autofill processing...", "Contact Tracing", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             string myString = txtbox_displaytxt.Text;
-            string[] str = myString.Split(' ');
+            string[] str = myString.Split('~');
             txtbox_firstname.Text = str[0].Substring(str[0].IndexOf('-') + 1);
             txtbox_middlename.Text = str[1].Substring(str[1].IndexOf('-') + 1);
             txtbox_lastname.Text = str[2].Substring(str[2].IndexOf('-') + 1);
