@@ -60,6 +60,7 @@
             this.lbl_gender = new System.Windows.Forms.Label();
             this.lbl_camera = new System.Windows.Forms.Label();
             this.lbl_display = new System.Windows.Forms.Label();
+            this.btn_clear = new System.Windows.Forms.Button();
             this.pnl_bot.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picbox_cameradisplay)).BeginInit();
             this.SuspendLayout();
@@ -364,6 +365,19 @@
             this.lbl_display.TabIndex = 26;
             this.lbl_display.Text = "Display";
             // 
+            // btn_clear
+            // 
+            this.btn_clear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(192)))));
+            this.btn_clear.Font = new System.Drawing.Font("Impact", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_clear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(212)))), ((int)(((byte)(224)))));
+            this.btn_clear.Location = new System.Drawing.Point(559, 218);
+            this.btn_clear.Name = "btn_clear";
+            this.btn_clear.Size = new System.Drawing.Size(201, 43);
+            this.btn_clear.TabIndex = 27;
+            this.btn_clear.Text = "CLEAR ALL FIELDS";
+            this.btn_clear.UseVisualStyleBackColor = false;
+            this.btn_clear.Click += new System.EventHandler(this.btn_clear_Click);
+            // 
             // form_contacttracing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -372,6 +386,7 @@
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(93)))), ((int)(((byte)(160)))));
             this.ClientSize = new System.Drawing.Size(783, 734);
+            this.Controls.Add(this.btn_clear);
             this.Controls.Add(this.lbl_display);
             this.Controls.Add(this.lbl_camera);
             this.Controls.Add(this.lbl_gender);
@@ -446,6 +461,7 @@
         private System.Windows.Forms.Label lbl_gender;
         private System.Windows.Forms.Label lbl_camera;
         private System.Windows.Forms.Label lbl_display;
+        private System.Windows.Forms.Button btn_clear;
     }
 }
 

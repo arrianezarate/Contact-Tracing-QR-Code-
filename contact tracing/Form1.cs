@@ -119,5 +119,26 @@ namespace contact_tracing
             txtbox_mobile.Text = str[7].Substring(str[7].IndexOf('-') + 1);
             txtbox_email.Text = str[8].Substring(str[8].IndexOf('-') + 1);
         }
+
+        private void btn_clear_Click(object sender, EventArgs e)
+        {
+            clear();
+        }
+
+        void clear()
+        {
+            txtbox_firstname.Clear();
+            txtbox_middlename.Clear();
+            txtbox_lastname.Clear();
+            txtbox_birthdate.Clear();
+            txtbox_age.Clear();
+            txtbox_gender.Clear();
+            txtbox_address.Clear();
+            txtbox_mobile.Clear();
+            txtbox_email.Clear();
+            txtbox_displaytxt.Clear();
+
+            txtbox_firstname.Focus();
+        }
     }
 }
